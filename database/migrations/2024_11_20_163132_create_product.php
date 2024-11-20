@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name'); // Naziv proizvoda
             $table->text('description')->nullable(); // Opis (može biti prazan)
             $table->integer('amount'); // Količina
-            $table->decimal('price', 10, 2); // Cena (10 cifara, 2 decimale)
+            $table->decimal('price', 10, 2); // Cijena (10 cifara, 2 decimale)
             $table->string('image')->nullable(); // Putanja do slike (može biti prazna)
             $table->timestamps(); // Kreira created_at i updated_at kolone
         });
